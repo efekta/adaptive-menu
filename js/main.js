@@ -7,9 +7,11 @@ $(function() {
 	var navLink = $('li a');
 
 	menuLink.click(function() {
+		event.preventDefault();
 		menu.toggleClass('active-menu');
 	});
 	close.click(function() {
+		event.preventDefault();
 		menu.toggleClass('active-menu');
 	});
 
